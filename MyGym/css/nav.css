@@ -1,0 +1,41 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0 2%;
+    z-index: 10000;
+    background: #000;
+  }
+  
+  .header .logo {
+    font-weight: bolder;
+    color: #fff;
+    font-size: 3rem;
+  }
+  
+  .header .logo span {
+    color: #f00;
+    font-size: 3rem;
+  }
+  
+  .header .navbar a {
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+  }
+  
+  .header .navbar a:hover {
+    background: #f00;
+  }
+  
