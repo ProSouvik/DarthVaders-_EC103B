@@ -43,7 +43,7 @@ The Demo Video Of This Project
 ## Screenshots
 
 ### Landing Page
-[](https://iili.io/JMp4tx2.png)
+![image](https://iili.io/JMp4tx2.png)
 [](https://freeimage.host/i/JMp4tx2)
 [](https://freeimage.host/i/JMp4DVS)
 ### About Page
