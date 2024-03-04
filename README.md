@@ -18,7 +18,7 @@ Changes Done To The Whole Website
 - Added About Section,Membership,Contact Pages
 - Added Sectioned Footer With Description, SiteMap, Reason
 - Added Get In Touch Section In The Contact Pages
-## 🚀Features
+## 🔥 Features
 
 - Live & Responsive
 - Live previews
