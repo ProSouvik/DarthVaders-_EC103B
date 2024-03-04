@@ -1,42 +1,77 @@
+
 # Project ID - EC103B
-
-# Hacking Guide for MyGym 😎
-
-## .MyGym 🤞
-
-It is a Gym Website made with HTML CSS 😊
+# Project On GYM Webpage
+## Team Name - DarthVaders'
+This project targets the vast community of gym freaks. The Website Is Based Upon The Gym Named 'AlphaGYM'. "Be Strong, Be ALPHA". 
 
 
-## How to setup it on your device ?? 🤔
+### Members
+1. Swarnadip Sen
+2. Souvik Roy
+3. Swapit Biswas
+4. Swarup Ghosh
 
-### 🤞 Step 1
+## Changes
+Changes Done To The Whole Website
+- Added Readme File To The Repository  
+- Added Scrollable Landing Homepage
+- Added About Section,Membership,Contact Pages
+- Added Sectioned Footer With Description, SiteMap, Reason
+- Added Get In Touch Section In The Contact Pages
+## Features
 
-Click on Fork and rename it as
-
-#### TeamName_ProjectID
-### 🤞 Step 2 
-Copy the https link from Code Section
-
-#### Open Command Prompt and type
-
-```http
-  cd desktop
-  git clone <https link>
-```
-Now the project is on your desktop now open it with your code editor
-now you are got to go for hacking !!
-
-
-## 😒 What You are  able to change? 
-1. Given Colors
-2. Logo
-3. Landing page Image
-4. Landing Text Design
-5. Make it a single page on scroll or multipage as you wish
+- Live & Responsive
+- Live previews
+- Fullscreen mode
+- Cross platform (Pretty Sure It Does Work... We've Tested In Multiple Platform)
 
 
+## Deployment
+
+The Deployment Of This Project Is Done In Vercel Platform
 
 
-## 👌 Ask your doubt on Discord
+  [Our Website](https://darth-vaders-ec-103-b.vercel.app/)
 
-[Click Here](https://discord.com/invite/8qJBt5pby5)  👈👈
+
+## Demo
+
+The Demo Video Of This Project
+![Attached](https://www.youtube.com/watch?v=itySUUZsz0g&t=1s)
+
+
+## Screenshots
+
+### Landing Page
+![](https://freeimage.host/i/JMp4pf9)
+![](https://freeimage.host/i/JMp4tx2)
+![](https://freeimage.host/i/JMp4DVS)
+### About Page
+![](https://freeimage.host/i/JMp4bi7)
+![](https://freeimage.host/i/JMp69Uu)
+![](https://freeimage.host/i/JMp4yle)
+###  Membership Page
+![](https://freeimage.host/i/JMp6dRj)
+![](https://freeimage.host/i/JMp6JHb)
+### Contact Us
+![](https://freeimage.host/i/JMp62Ox)
+![](https://freeimage.host/i/JMp63DQ)
+![](https://freeimage.host/i/JMp6KxV)
+
+## FAQ
+
+#### What Languages Have Been Used?
+
+HTML,CSS
+
+#### Website Is Based Upon?
+
+A GYM
+
+
+## Logs
+- Forked From The Repository
+[DevWrap_EC103B](https://github.com/SC-ECE/DevWrap_EC103B)
+- Cloned To Account
+[ProSouvik](https://github.com/ProSouvik)
+- Deploymwnt With Vercel
