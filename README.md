@@ -37,26 +37,26 @@ The Deployment Of This Project Is Done In Vercel Platform
 ## Demo
 
 The Demo Video Of This Project
-![Attached](https://www.youtube.com/watch?v=itySUUZsz0g&t=1s)
+[Attached](https://www.youtube.com/watch?v=itySUUZsz0g&t=1s)
 
 
 ## Screenshots
 
 ### Landing Page
-![](https://freeimage.host/i/JMp4pf9)
-![](https://freeimage.host/i/JMp4tx2)
-![](https://freeimage.host/i/JMp4DVS)
+[](https://freeimage.host/i/JMp4pf9)
+[](https://freeimage.host/i/JMp4tx2)
+[](https://freeimage.host/i/JMp4DVS)
 ### About Page
-![](https://freeimage.host/i/JMp4bi7)
-![](https://freeimage.host/i/JMp69Uu)
-![](https://freeimage.host/i/JMp4yle)
+[](https://freeimage.host/i/JMp4bi7)
+[](https://freeimage.host/i/JMp69Uu)
+[](https://freeimage.host/i/JMp4yle)
 ###  Membership Page
-![](https://freeimage.host/i/JMp6dRj)
-![](https://freeimage.host/i/JMp6JHb)
+[](https://freeimage.host/i/JMp6dRj)
+[](https://freeimage.host/i/JMp6JHb)
 ### Contact Us
-![](https://freeimage.host/i/JMp62Ox)
-![](https://freeimage.host/i/JMp63DQ)
-![](https://freeimage.host/i/JMp6KxV)
+[](https://freeimage.host/i/JMp62Ox)
+[](https://freeimage.host/i/JMp63DQ)
+[](https://freeimage.host/i/JMp6KxV)
 
 ## FAQ
 
