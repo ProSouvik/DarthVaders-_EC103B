@@ -273,3 +273,9 @@ input:focus~.highlight {
         height: 48px;
     }
 }
+
+.contact-us {
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #ebebeb;
+}

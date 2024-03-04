@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/about.css">
-
+    <link rel="stylesheet" href="/css/footer.css">
     <!-- CDN -->
     <script src="https://kit.fontawesome.com/581d39d767.js" crossorigin="anonymous"></script>
 
@@ -18,6 +18,31 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
 
+    <style>
+        .btn {
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 1rem 4rem;
+            padding-right: 3rem;
+            background: linear-gradient(130deg, #f00 93%, transparent 90%);
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.7rem;
+        }
+
+        .btn:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+
+        #menu-btn {
+            font-size: 3rem;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,9 +52,8 @@
         <nav class="navbar">
             <a href="/">Home</a>
             <a href="/lib/about.html">About</a>
-            <a href="#pricing">Membership</a>
+            <a href="/lib/membership.html">Membership</a>
             <a href="/lib/contact.html">Contact</a>
-            <a href="#blogs">Blogs</a>
         </nav>
     </header>
 
@@ -53,20 +77,39 @@
         </div>
         <div class="cart-content">
             <span class="title">David Martinez</span>
-            <p>Experience: David is a dedicated personal trainer with over 5 years of experience in the fitness industry. He holds a degree in Exercise Physiology and is certified by the National Academy of Sports Medicine (NASM).
-                Specialization: David specializes in functional movement training, injury prevention, and sports-specific conditioning. He has a keen understanding of biomechanics and tailors training programs to address individual needs and goals.
-                Achievements: David has successfully worked with clients recovering from injuries and helped them regain strength, mobility, and confidence. He is known for his compassionate approach and commitment to his clients' well-being.</p>
-            
+            <ul>
+                <li>Experience: David is a dedicated personal trainer with over 5 years of experience in the fitness
+                    industry. He holds a degree in Exercise Physiology and is certified by the National Academy of
+                    Sports Medicine (NASM).</li>
+                <li>Specialization: David specializes in functional movement training, injury prevention, and
+                    sports-specific conditioning. He has a keen understanding of biomechanics and tailors training
+                    programs to address individual needs and goals.
+                </li>
+                <li>Achievements: David has successfully worked with clients recovering from injuries and helped them
+                    regain strength, mobility, and confidence. He is known for his compassionate approach and commitment
+                    to his clients' well-being. </li>
+            </ul>
+
         </div>
     </div>
 
     <div class="card2">
         <div class="cart-content">
             <span class="title">Emily Johnson</span>
-            <p>Emily is a seasoned fitness coach with over 8 years of experience in the industry. She holds a Master's degree in Sports Psychology and is certified by several reputable fitness organizations.
-                Specialization: Emily specializes in group fitness classes, HIIT (High-Intensity Interval Training), and motivational coaching. She is known for her energetic and dynamic training style, which keeps her clients engaged and motivated.
-                Achievements: Emily has successfully led numerous group fitness programs and has helped her clients achieve significant improvements in their overall fitness levels and mental well-being. She is passionate about helping others reach their full potential and lead healthy, active lifestyles. 
-            </p>
+            <ul>
+                <li>Experience: Emily is a seasoned fitness coach with over 8 years of experience in the industry. She
+                    holds a Master's degree in Sports Psychology and is certified by several reputable fitness
+                    organizations.
+                </li>
+                <li>Specialization: Emily specializes in group fitness classes, HIIT (High-Intensity Interval Training),
+                    and motivational coaching. She is known for her energetic and dynamic training style, which keeps
+                    her clients engaged and motivated.
+                </li>
+                <li>Achievements: Emily has successfully led numerous group fitness programs and has helped her clients
+                    achieve significant improvements in their overall fitness levels and mental well-being. She is
+                    passionate about helping others reach their full potential and lead healthy, active lifestyles.
+                </li>
+            </ul>
         </div>
         <div class="card-img">
             <img src="/images/trainer/t2.jpg" alt="2nd">
@@ -79,9 +122,53 @@
         </div>
         <div class="cart-content">
             <span class="title">John Smith</span>
-            <p>Experience: John has been a certified personal trainer for over 10 years. He holds a Bachelor's degree in Exercise Science from a reputable university and multiple certifications in strength training, nutrition, and corrective exercise.
-                Specialization: John specializes in strength and conditioning, weight loss management, and functional training. He has worked with clients of all fitness levels, from beginners to athletes.
-                Achievements: John has successfully helped numerous clients achieve their fitness goals, including weight loss, muscle gain, and improved athletic performance. He prides himself on his personalized approach and commitment to his clients' success.</p>
+            <ul>
+                <li>Experience: John has been a certified personal trainer for over 10 years. He holds a Bachelor's
+                    degree in Exercise Science from a reputable university and multiple certifications in strength
+                    training, nutrition, and corrective exercise.</li>
+                <li>Specialization: John specializes in strength and conditioning, weight loss management, and
+                    functional training. He has worked with clients of all fitness levels, from beginners to athletes.
+                </li>
+                <li>Achievements: John has successfully helped numerous clients achieve their fitness goals, including
+                    weight loss, muscle gain, and improved athletic performance. He prides himself on his personalized
+                    approach and commitment to his clients' success. </li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="display: flex;justify-content: center;">
+        <a href="/lib/membership.html" class="btn">Membership</a>
+    </div>
+
+
+    <div class="footer">
+        <div class="f1">
+            <div class="footer-logo">
+                <b><span class="alpha">ALPHA</span><span class="gym">GYM</span></b>
+            </div>
+            <p>13th Street Avenue,Sector-3,Kolkata</p>
+            <p>Near Park Street Police Station,</p>
+            <p>Adjacent to Park Street Metro Station,</p>
+            <p>Kolkata 700071,</p>
+            <p>West Bengal, India</p>
+
+        </div>
+        <div class="f2">
+            <span style="color: red;padding-right: 1px;">SITE</span><span style="padding-left: 0px;">MAP</span>
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/lib/about.html">About</a> </li>
+                <li><a href="/lib/membership.html">Membership</a></li>
+                <li><a href="/lib/contact.html">Contact</a> </li>
+            </ul>
+        </div>
+        <div class="f3">
+            <span style="color: red;padding-right: 0px;">REASON FOR</span><span>JOINING US</span>
+            <ul>
+                <li>Going to the gym is great for your body. But it's also great for your mind</li>
+                <li>Fitness isn't about building a better body. It's about building a better life</li>
+                <li>Pushing through the pain, embracing the gain</li>
+            </ul>
         </div>
     </div>
 </body>

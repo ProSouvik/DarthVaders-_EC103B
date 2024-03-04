@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Gym|Membership</title>
+    <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/membership.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- CDN -->
+    <script src="https://kit.fontawesome.com/581d39d767.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            text-decoration: none;
+            outline: none;
+            border: none;
+            -webkit-transition: all .2s linear;
+            transition: all .2s linear;
+        }
+
+
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+            scroll-padding-top: 5rem;
+            background-color: #000;
+        }
+
+        html::-webkit-scrollbar {
+            width: 1rem;
+        }
+
+        html::-webkit-scrollbar-track {
+            background: #000;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background: #f00;
+        }
+
+        .home {
+            padding: 0;
+            margin-top: 5rem;
+        }
+
+        .home .slide {
+            background: url(/images/m.jpg) no-repeat;
+            min-height: 100vh;
+            background-size: cover !important;
+            background-position: center !important;
+            padding: 2rem 9%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+        }
+
+        .content {
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 55px;
+        }
+
+        .btn {
+            margin-top: 1rem;
+            display: inline-block;
+            padding: 1rem 4rem;
+            padding-right: 3rem;
+            background: linear-gradient(130deg, #f00 93%, transparent 90%);
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.7rem;
+        }
+
+        .btn:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+
+        #menu-btn {
+            font-size: 3rem;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+ 
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"> <span>ALPHA</span>GYM </a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <nav class="navbar">
+          <a href="/">Home</a>
+          <a href="/lib/about.html">About</a>
+          <a href="/lib/membership.html">Membership</a>
+          <a href="/lib/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="slide">
+            <div class="content">
+                <h1>Membership</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="ag-format-container">
+        <div class="ag-courses_box">
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Monthly
+              </div>
+              
+              <div class="ag-courses-item_date-box">
+                Rs:
+                <span class="ag-courses-item_date">
+                    799/- 
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Quarterly 
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Rs:
+                <span class="ag-courses-item_date">
+                    1999/-
+                </span>
+              </div>
+            </a>
+          </div>
+      
+          <div class="ag-courses_item">
+            <a href="#" class="ag-courses-item_link">
+              <div class="ag-courses-item_bg"></div>
+      
+              <div class="ag-courses-item_title">
+                Annually 
+              </div>
+      
+              <div class="ag-courses-item_date-box">
+                Rs:
+                <span class="ag-courses-item_date">
+                    7999/-
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex;justify-content: center;">
+        <a href="/lib/contact.html" class="btn">Contact Us</a>
+    </div>
+
+      <div class="footer">
+        <div class="f1">
+            <div class="footer-logo">
+                <b><span class="alpha">ALPHA</span><span class="gym">GYM</span></b>
+            </div>
+            <p>13th Street Avenue,Sector-3,Kolkata</p>
+            <p>Near Park Street Police Station,</p>
+            <p>Adjacent to Park Street Metro Station,</p>
+            <p>Kolkata 700071,</p>
+            <p>West Bengal, India</p>
+
+        </div>
+        <div class="f2">
+            <span style="color: red;padding-right: 1px;">SITE</span><span style="padding-left: 0px;">MAP</span>
+            <ul>
+                <li><a href="/">Home</a> </li>
+                <li><a href="/lib/about.html">About</a> </li>
+                <li><a href="/lib/membership.html">Membership</a></li>
+                <li><a href="/lib/contact.html">Contact</a> </li>
+            </ul>
+        </div>
+        <div class="f3">
+            <span style="color: red;padding-right: 0px;">REASON FOR</span><span>JOINING US</span>
+            <ul>
+                <li>Going to the gym is great for your body. But it's also great for your mind</li>
+                <li>Fitness isn't about building a better body. It's about building a better life</li>
+                <li>Pushing through the pain, embracing the gain</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
