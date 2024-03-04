@@ -38,25 +38,24 @@ The Deployment Of This Project Is Done In Vercel Platform
 
 The Demo Video Of This Project
 [<video src="https://www.youtube.com/watch?v=itySUUZsz0g&t=1s">
-</video>]()
-
+</video>](https://github.com/ProSouvik/DarthVaders-_EC103B/blob/main/MyGym/images/about-bg-1.jpg)
 ## Screenshots
 
 ### Landing Page
-![image](https://freeimage.host/i/JMp4pf9)
-![image](https://freeimage.host/i/JMp4tx2)
-![image](https://freeimage.host/i/JMp4DVS)
+![image](https://iili.io/JMp4pf9.png)
+![image](https://iili.io/JMp4tx2.png)
+![image](https://iili.io/JMp4DVS.png)
 ### About Page
-![image](https://freeimage.host/i/JMp4bi7)
-![image](https://freeimage.host/i/JMp69Uu)
-![image](https://freeimage.host/i/JMp4yle)
+![image](https://iili.io/JMp4bi7.png)
+![image](https://iili.io/JMp69Uu.png)
+![image](https://iili.io/JMp4yle.png)
 ###  Membership Page
-![image](https://freeimage.host/i/JMp6dRj)
-![image](https://freeimage.host/i/JMp6JHb)
+![image](https://iili.io/JMp6dRj.png)
+![image](https://iili.io/JMp6JHb.png)
 ### Contact Us
-![image](https://freeimage.host/i/JMp62Ox)
-![image](https://freeimage.host/i/JMp63DQ)
-![image](https://freeimage.host/i/JMp6KxV)
+![image](https://iili.io/JMp62Ox.png)
+![image](https://iili.io/JMp63DQ.png)
+![image](https://iili.io/JMp6KxV.png)
 
 ## FAQ
 
