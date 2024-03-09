@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Gym</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/comment.css">
     <!-- CDN -->
     <script src="https://kit.fontawesome.com/581d39d767.js" crossorigin="anonymous"></script>
 
@@ -20,7 +21,10 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
 
+    <style>
 
+
+    </style>
 </head>
 
 <body>
@@ -30,20 +34,27 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <nav class="navbar">
             <a href="/">Home</a>
-            <a href="/lib/about.html">About</a>
-            <a href="/lib/membership.html">Membership</a>
-            <a href="/lib/contact.html">Contact</a>
+            <a href="/about">About</a>
+            <a href="/membership">Membership</a>
+            <a href="/contact">Contact</a>
+
+            {% if user.is_anonymous%}
+            <a href="/login"><i class="fa-solid fa-user"></i> <span style="color:red"><b>Log In</b></span></a>
+            {% else %}
+            <a href="/logout"><i class="fa-solid fa-user"></i> <span style="color:red"><b>{{user.first_name}}</b></span></a>
+            {% endif %}
+
         </nav>
     </header>
 
     <section class="home" id="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat ;">
+                <div class="swiper-slide slide" style="background: url(/static/media/home-bg-1.jpg) no-repeat ;">
                     <div class="content">
                         <span>Be Strong, Be ALPHA</span>
                         <h3>Make Yourself Stronger than your Excuses.</h3>
-                        <a href="/lib/about.html" class="btn">Get started</a>
+                        <a href="/about/" class="btn">Get started</a>
                         <h4>Opening Hours: 7AM to 11PM</h4>
                     </div>
                 </div>
@@ -84,6 +95,35 @@
             vitamins requirements.</p>
     </div>
 
+    <!-- <div class="flyer" style="width: 80%;height: 200px;">
+        <img src="/static/media/auth/gym-flyer.png" alt="" style="object-fit: contain;">
+    </div> -->
+
+
+    <div class="comment-section">
+
+
+        <form method="post" style="padding: 0;padding-left: 15px;">
+            {% csrf_token %}
+            <div class="post-box" style="display: grid;grid-template-columns: 9fr 1fr;">
+                <input type="text" name="msg" id="msg" placeholder="Add a comment...">
+                <button type="submit">Post</button>
+            </div>
+        </form>
+
+        {% for i in msg %}
+        <div class="comment-div">
+            <div class="profile-pic">
+                <img src="/static/userlogo.jpg" alt="">
+            </div>
+            <div class="ppl-comments">
+                <p style="color: red;"><b>{{i.user}}</b></p>
+                <p>{{i.comment}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
     <div class="footer">
         <div class="f1">
             <div class="footer-logo">
@@ -100,9 +140,9 @@
             <span style="color: red;padding-right: 1px;">SITE</span><span style="padding-left: 0px;">MAP</span>
             <ul>
                 <li><a href="/">Home</a> </li>
-                <li><a href="/lib/about.html">About</a> </li>
-                <li><a href="/lib/membership.html">Membership</a></li>
-                <li><a href="/lib/contact.html">Contact</a> </li>
+                <li><a href="/about/">About</a> </li>
+                <li><a href="/membership/">Membership</a></li>
+                <li><a href="/contact/">Contact</a> </li>
             </ul>
         </div>
         <div class="f3">
@@ -114,5 +154,7 @@
             </ul>
         </div>
     </div>
+
 </body>
+
 </html>

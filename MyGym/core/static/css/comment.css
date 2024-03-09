@@ -1,0 +1,36 @@
+
+.comment-section {
+    margin: 10%;
+}
+
+
+.post-box {
+    margin: 20px;
+}
+
+
+.post-box button{
+    width: 80px;
+}
+.post-box input {
+    margin-top: 10px;
+    width: 90%;
+}
+
+.comment-div {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 20px;
+}
+
+
+.profile-pic img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.ppl-comments p {
+    margin: 10px;
+    color: aliceblue;
+}

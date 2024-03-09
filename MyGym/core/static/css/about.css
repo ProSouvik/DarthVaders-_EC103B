@@ -39,7 +39,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .slide {
-    background: url(/images/about-bg-1.jpg) no-repeat;
+    background: url(/static/media/about-bg-1.jpg) no-repeat;
     min-height: 100vh;
     background-size: cover !important;
     background-position: center !important;
@@ -130,11 +130,12 @@ html::-webkit-scrollbar-thumb {
 @media screen and (max-width: 768px) {
     .card {
         grid-template-columns: 1fr;
+        height: auto;
     }
 
     .card2 {
         grid-template-columns: 1fr;
-        
+        height: auto;
     }
 
 }

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+
+    <!-- Include Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .payment-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .payment-section {
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 600px) {
+            .payment-container {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Payment Gateway</h2>
+
+        <label for="paymentMethod">Select Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" onchange="togglePaymentSections()" required>
+            <option value="" disabled selected>Select payment method</option>
+            <option value="creditCard">Credit Card</option>
+            <option value="debitCard">Debit Card</option>
+            <option value="netBanking">Net Banking</option>
+            <option value="upi">UPI</option>
+        </select>
+
+        <div class="payment-section" id="creditCardSection">
+            <label for="creditCardType">Select Credit Card Type:</label>
+            <select id="creditCardType" name="creditCardType" required>
+                <option value="" disabled selected>Select credit card type</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+            <label for="creditCardNumber">Credit Card Number:</label>
+            <input type="text" id="creditCardNumber" name="creditCardNumber" placeholder="Enter credit card number" required>
+        </div>
+
+        <div class="payment-section" id="debitCardSection">
+            <label for="debitCardType">Select Debit Card Type:</label>
+            <select id="debitCardType" name="debitCardType" required>
+                <option value="" disabled selected>Select debit card type</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+            </select>
+            <label for="debitCardNumber">Debit Card Number:</label>
+            <input type="text" id="debitCardNumber" name="debitCardNumber" placeholder="Enter debit card number" required>
+        </div>
+
+
+        <div class="payment-section" id="netBankingSection">
+            <label for="netBanking">Select Bank for Net Banking:</label>
+            <select id="netBanking" name="netBanking" required>
+                <option value="" disabled selected>Select your bank</option>
+                <option value="bank1">Bank Of India</option>
+                <option value="bank2">State Bank of India</option>
+            </select>
+        </div>
+
+        <div class="payment-section" id="upiSection">
+            <label for="upiApp">Select UPI App:</label>
+            <select id="upiApp" name="upiApp" required>
+                <option value="" disabled selected>Select UPI app</option>
+                <option value="googlePay">Google Pay</option>
+                <option value="phonePe">PhonePe</option>
+                <option value="paytm">Paytm</option>
+            </select>
+            <label for="upiId">UPI ID:</label>
+            <input type="text" id="upiId" name="upiId" placeholder="Enter UPI ID" required>
+        </div>
+
+        <div class="payment-section" id="cvvExpirySection">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required>
+        </div>
+
+        <form action="/process_payment" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <script>
+        function togglePaymentSections() {
+            var paymentMethod = document.getElementById("paymentMethod").value;
+            
+            document.getElementById("creditCardSection").style.display = "none";
+            document.getElementById("debitCardSection").style.display = "none";
+            document.getElementById("netBankingSection").style.display = "none";
+            document.getElementById("upiSection").style.display = "none";
+            document.getElementById("cvvExpirySection").style.display = "none";
+
+            if (paymentMethod === "creditCard") {
+                document.getElementById("creditCardSection").style.display = "block";
+            } else if (paymentMethod === "debitCard") {
+                document.getElementById("debitCardSection").style.display = "block";
+            } else if (paymentMethod === "netBanking") {
+                document.getElementById("netBankingSection").style.display = "block";
+            } else if (paymentMethod === "upi") {
+                document.getElementById("upiSection").style.display = "block";
+            }
+
+            document.getElementById("cvvExpirySection").style.display = "block";
+        }
+    </script>
+</body>
+</html>

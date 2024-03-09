@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/contact.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
     <!-- CDN -->
     <script src="https://kit.fontawesome.com/581d39d767.js" crossorigin="anonymous"></script>
 
@@ -25,9 +25,16 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <nav class="navbar">
             <a href="/">Home</a>
-            <a href="/lib/about.html">About</a>
-            <a href="/lib/membership.html">Membership</a>
-            <a href="/lib/contact.html">Contact</a>
+            <a href="/about/">About</a>
+            <a href="/membership/">Membership</a>
+            <a href="/contact/">Contact</a>
+
+            {% if user.is_anonymous%}
+            <a href="/login"><i class="fa-solid fa-user"></i> <span style="color:red"><b>Log In</b></span></a>
+            {% else %}
+            <a href="/logout"><i class="fa-solid fa-user"></i> <span style="color:red"><b>{{user.first_name}}</b></span></a>
+            {% endif %}
+
         </nav>
     </header>
 
@@ -91,9 +98,9 @@
             <span style="color: red;padding-right: 1px;">SITE</span><span style="padding-left: 0px;">MAP</span>
             <ul>
                 <li><a href="/">Home</a> </li>
-                <li><a href="/lib/about.html">About</a> </li>
-                <li><a href="/lib/membership.html">Membership</a></li>
-                <li><a href="/lib/contact.html">Contact</a> </li>
+                <li><a href="/about/">About</a> </li>
+                <li><a href="/membership/">Membership</a></li>
+                <li><a href="/contact/">Contact</a> </li>
             </ul>
         </div>
         <div class="f3">

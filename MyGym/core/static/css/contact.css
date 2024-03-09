@@ -36,7 +36,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .home .slide {
-    background: url(/images/contact-us.jpg) no-repeat;
+    background: url(/static/media/contact-us.jpg) no-repeat;
     min-height: 80vh;
     background-size: cover !important;
     background-position: center !important;
@@ -278,4 +278,17 @@ input:focus~.highlight {
     margin-bottom: 40px;
     font-size: 25px;
     color: #ebebeb;
+}
+
+@media screen and (max-width: 768px) {
+    .details {
+        padding: 0px;
+    }
+
+    .d1 {
+        padding: 0px;
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
 }

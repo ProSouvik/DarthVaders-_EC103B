@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
 
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/about.css">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/static/css/nav.css">
+    <link rel="stylesheet" href="/static/css/about.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
     <!-- CDN -->
     <script src="https://kit.fontawesome.com/581d39d767.js" crossorigin="anonymous"></script>
 
@@ -19,6 +19,9 @@
         rel="stylesheet">
 
     <style>
+        
+
+
         .btn {
             margin-top: 1rem;
             display: inline-block;
@@ -51,9 +54,16 @@
         <div id="menu-btn" class="fas fa-bars"></div>
         <nav class="navbar">
             <a href="/">Home</a>
-            <a href="/lib/about.html">About</a>
-            <a href="/lib/membership.html">Membership</a>
-            <a href="/lib/contact.html">Contact</a>
+            <a href="/about">About</a>
+            <a href="/membership">Membership</a>
+            <a href="/contact">Contact</a>
+
+            {% if user.is_anonymous%}
+            <a href="/login"><i class="fa-solid fa-user"></i> <span style="color:red"><b>Log In</b></span></a>
+            {% else %}
+            <a href="/logout"><i class="fa-solid fa-user"></i> <span style="color:red"><b>{{user.first_name}}</b></span></a>
+            {% endif %}
+
         </nav>
     </header>
 
@@ -68,12 +78,11 @@
     <div style="display: flex; justify-content: center;padding-top: 40px;">
         <span style="font-size: 35px;color: #f00;">TRAI</span><span style="font-size: 35px;color: aliceblue;">
             NERS</span>
-
     </div>
 
     <div class="card">
         <div class="card-img">
-            <img src="/images/trainer/t1.png" alt="1st">
+            <img src="/static/media/trainer/t1.png" alt="1st">
         </div>
         <div class="cart-content">
             <span class="title">David Martinez</span>
@@ -112,13 +121,13 @@
             </ul>
         </div>
         <div class="card-img">
-            <img src="/images/trainer/t2.jpg" alt="2nd">
+            <img src="/static/media/trainer/t2.jpg" alt="2nd">
         </div>
     </div>
 
     <div class="card">
         <div class="card-img">
-            <img src="/images/trainer/t3.jpg" alt="3rd">
+            <img src="/static/media/trainer/t3.jpg" alt="3rd">
         </div>
         <div class="cart-content">
             <span class="title">John Smith</span>
@@ -137,7 +146,7 @@
     </div>
 
     <div style="display: flex;justify-content: center;">
-        <a href="/lib/membership.html" class="btn">Membership</a>
+        <a href="/membership/" class="btn">Membership</a>
     </div>
 
 
@@ -157,9 +166,9 @@
             <span style="color: red;padding-right: 1px;">SITE</span><span style="padding-left: 0px;">MAP</span>
             <ul>
                 <li><a href="/">Home</a> </li>
-                <li><a href="/lib/about.html">About</a> </li>
-                <li><a href="/lib/membership.html">Membership</a></li>
-                <li><a href="/lib/contact.html">Contact</a> </li>
+                <li><a href="/about/">About</a> </li>
+                <li><a href="/membership/">Membership</a></li>
+                <li><a href="/contact/">Contact</a> </li>
             </ul>
         </div>
         <div class="f3">

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up</title>
+
+    <link rel="stylesheet" href="/static/css/signup.css">
+
+    <style>
+        body {
+            
+            background-image: url('/static/media/auth/buildings.jpg');
+        }
+
+        .login {
+            display: flex;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div style="display: flex;
+    justify-content: center;">
+        <div class="login">
+            <form method="POST">
+                {% csrf_token %}
+                <h1>SIGN UP</h1>
+                <label> Name</label>
+                <input type="text" name="name" required>
+                <label> Email</label>
+                <input type="email" name="email" required>
+                <label> Password</label>
+                <input type="password" name="password" required>
+                <button type="submit">Sign Up</button>
+
+                <span style="color: aliceblue;">Or Have a account<a href="/login"> Login</a> </span>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
