@@ -23,7 +23,8 @@ This project targets the vast community of gym freaks. The Website Is Based Upon
 
 ### 😎Members
 1. Swarnadip Sen 
-2. Souvik Roy
+2. Souvik Roy ![Static Badge](https://img.shields.io/badge/LinkedIn-blue?style=social&logo=linkedin&logoColor=blue&cacheSeconds=1&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fpoison0305%2F)
+
 3. Swapit Biswas ![Static Badge](https://img.shields.io/badge/LinkedIn-blue?style=social&logo=linkedin&logoColor=blue&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fswapit-biswas-46b3a629b%2F)
 
 
